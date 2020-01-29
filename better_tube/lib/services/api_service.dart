@@ -16,6 +16,7 @@ class APIService {
   final String _baseUrl = 'www.googleapis.com';
   String _nextPageToken = '';
   String _nextPageTokenSubs = '';
+  List<dynamic> _allChannelsJson;
 
   Future<Channel> fetchChannel({String channelId}) async {
     Map<String, String> parameters = {
@@ -49,7 +50,6 @@ class APIService {
   }
 
   Future<List<Video>> fetchVideosFromPlaylist({String playlistId}) async {
-    print('fetchVideosFromPlaylist');
     Map<String, String> parameters = {
       'part': 'snippet',
       'playlistId': playlistId,
@@ -87,48 +87,75 @@ class APIService {
     }
   }
 
-  Future<List<Channels>> fetchSubscriptions(BuildContext context) async {
-    print('fetchSubscriptions');
-    Map<String, String> parameters = {
-      'part': 'snippet',
-      'mine' : 'true',
-      'maxResults': '8',
-      'pageToken': _nextPageTokenSubs,
-      'key': API_KEY,
-    };
-    Uri uri = Uri.https(
-      _baseUrl,
-      '/youtube/v3/subscriptions',
-      parameters,
+  /* 
+    Creates a list with all suscribed channels. 
+  */
+  Future<List<Channels>> fetchSubscriptions(String accessToken) async {
+    _allChannelsJson = new List<dynamic>();
+    while(_nextPageTokenSubs != 'end') {
+      await _fetchSubscriptionsAux(accessToken);
+    }
+
+    /* Parsing Json data to Channels model. */
+    List<Channels> channels = [];
+    _allChannelsJson.forEach(
+        (json) => channels.add(
+          Channels.fromMap(json['snippet']),
+        ),
     );
+    return channels;
+  }
+
+  /*  
+    Is called while there are channels that have not been saved yet. It is done this  
+    way because Youtube API has a maximum of 50 results per call. 
+  */
+  Future<void> _fetchSubscriptionsAux(String accessToken) async {
+    Uri uri = _createUri();
     Map<String, String> headers = {
       HttpHeaders.contentTypeHeader: 'application/json',
-      HttpHeaders.authorizationHeader: 'Bearer ' + AuthProvider.of(context).auth.accessToken,
+      HttpHeaders.authorizationHeader: 'Bearer ' + accessToken,
     };
 
-    // Get Playlist Videos
+    /* Get Channels */
     var response = await http.get(uri, headers: headers);
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
 
-      _nextPageTokenSubs = data['nextPageToken'] ?? '';
-      List<dynamic> channelsJson = data['items'];
-
-      // Fetch first eight videos from uploads playlist
-      List<Channels> channels = [];
-      channelsJson.forEach(
-        (json) => channels.add(
-          Channels.fromMap(json['snippet']),
-        ),
-      );
-      for(Channels channel in channels) {
-        print(channel.id);
-        print(channel.title);
+      /* Ending the while bucle if the final result page is reached. */
+      if(data.containsKey('nextPageToken')) {
+        _nextPageTokenSubs = data['nextPageToken'];
+      } else {
+        _nextPageTokenSubs = 'end';
       }
-      return channels;
+
+      /* The new results are added to the previous list. */
+      List<dynamic> channelsJson = data['items'];
+        _allChannelsJson.addAll(channelsJson);
     } else {
       throw json.decode(response.body)['error']['message'];
     }
+  }
+
+  Map<String, String> _createParameters() {
+    Map<String, String> parameters = {
+      'part': 'snippet',
+      'mine' : 'true',
+      'maxResults': '50',
+      'pageToken': _nextPageTokenSubs,
+      'order' : 'alphabetical',
+      'key': API_KEY,
+    };
+    return parameters;
+  }
+
+  Uri _createUri() {
+    Uri uri = Uri.https(
+      _baseUrl,
+      '/youtube/v3/subscriptions',
+      _createParameters(),
+    );
+    return uri;
   }
 
 }

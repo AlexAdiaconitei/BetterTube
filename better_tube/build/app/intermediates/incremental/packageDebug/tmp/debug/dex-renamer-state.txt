@@ -1,4 +1,4 @@
-#Wed Jan 29 18:00:48 CET 2020
+#Wed Jan 29 21:28:37 CET 2020
 base.0=D\:\\PROGRAMACION\\Flutter-Workspace\\Github-BetterTube\\better_tube\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

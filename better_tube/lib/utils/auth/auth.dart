@@ -46,7 +46,6 @@ class Auth implements BaseAuth {
 
       _user = res.user;
       _accessToken = (await account.authentication).accessToken;
-      print(_accessToken);
 
       print("User logged in with Google.");
       return true;

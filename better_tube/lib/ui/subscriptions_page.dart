@@ -1,8 +1,6 @@
 import 'package:better_tube/models/channels_model.dart';
+import 'package:better_tube/utils/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:better_tube/models/channel_model.dart';
-import 'package:better_tube/models/video_model.dart';
-import 'package:better_tube/screens/video_screen.dart';
 import 'package:better_tube/services/api_service.dart';
 
 class SubscriptionsPage extends StatefulWidget {
@@ -11,24 +9,26 @@ class SubscriptionsPage extends StatefulWidget {
 }
 
 class _SubscriptionsPageState extends State<SubscriptionsPage> {
-  Channel _channel;
+  List<Channels> _channels;
   bool _isLoading = false;
 
   @override
   void initState() {
     super.initState();
-    _initChannel();
-  }
-
-  _initChannel() async {
-    Channel channel = await APIService.instance
-        .fetchChannel(channelId: 'UCzoFbcQtMZAlIkiOndIs-ew');
-    setState(() {
-      _channel = channel;
+    Future.delayed(Duration.zero, () {
+      _initChannel();
     });
   }
 
-  _buildProfileInfo() {
+  _initChannel() async {
+    List<Channels> channels = await APIService.instance
+        .fetchSubscriptions(AuthProvider.of(context).auth.accessToken);
+    setState(() {
+      _channels = channels;
+    });
+  }
+
+  _buildProfileInfo(Channels channel) {
     return Container(
       margin: EdgeInsets.all(20.0),
       padding: EdgeInsets.all(20.0),
@@ -48,7 +48,7 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
           CircleAvatar(
             backgroundColor: Colors.white,
             radius: 35.0,
-            backgroundImage: NetworkImage(_channel.profilePictureUrl),
+            backgroundImage: NetworkImage(channel.profilePictureUrl),
           ),
           SizedBox(width: 12.0),
           Expanded(
@@ -57,19 +57,10 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  _channel.title,
+                  channel.title,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 20.0,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  overflow: TextOverflow.ellipsis,
-                ),
-                Text(
-                  '${_channel.subscriberCount} subscribers',
-                  style: TextStyle(
-                    color: Colors.grey[600],
-                    fontSize: 16.0,
                     fontWeight: FontWeight.w600,
                   ),
                   overflow: TextOverflow.ellipsis,
@@ -82,60 +73,16 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
     );
   }
 
-  _buildVideo(Video video) {
-    return GestureDetector(
-      onTap: () => Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => VideoScreen(id: video.id),
-        ),
-      ),
-      child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
-        padding: EdgeInsets.all(10.0),
-        height: 140.0,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black12,
-              offset: Offset(0, 1),
-              blurRadius: 6.0,
-            ),
-          ],
-        ),
-        child: Row(
-          children: <Widget>[
-            Image(
-              width: 150.0,
-              image: NetworkImage(video.thumbnailUrl),
-            ),
-            SizedBox(width: 10.0),
-            Expanded(
-              child: Text(
-                video.title,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 18.0,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  _loadMoreVideos(BuildContext context) async {
+  _loadMoreChannels() async {
     _isLoading = true;
-    List<Video> moreVideos = await APIService.instance
-        .fetchVideosFromPlaylist(playlistId: _channel.uploadPlaylistId);
-    List<Video> allVideos = _channel.videos..addAll(moreVideos);
-    setState(() {
-      _channel.videos = allVideos;
-    });
     List<Channels> channels = await APIService.instance
-        .fetchSubscriptions(context);
+        .fetchSubscriptions(AuthProvider.of(context).auth.accessToken);
+    if(channels != null) {
+      List<Channels> allChannels = _channels..addAll(channels);
+      setState(() {
+        _channels = allChannels;
+      });
+    }
     _isLoading = false;
   }
 
@@ -145,25 +92,22 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
       appBar: AppBar(
         title: Text('Subscriptions'),
       ),
-      body: _channel != null
+      body: _channels != null
           ? NotificationListener<ScrollNotification>(
               onNotification: (ScrollNotification scrollDetails) {
-                if (!_isLoading &&
-                    _channel.videos.length != int.parse(_channel.videoCount) &&
-                    scrollDetails.metrics.pixels ==
-                        scrollDetails.metrics.maxScrollExtent) {
-                  _loadMoreVideos(context);
-                }
+                // if (!_isLoading &&
+                //     scrollDetails.metrics.pixels ==
+                //         scrollDetails.metrics.maxScrollExtent) {
+                //   _loadMoreChannels();
+                // }
+                _loadMoreChannels();
                 return false;
               },
               child: ListView.builder(
-                itemCount: 1 + _channel.videos.length,
+                itemCount: _channels.length,
                 itemBuilder: (BuildContext context, int index) {
-                  if (index == 0) {
-                    return _buildProfileInfo();
-                  }
-                  Video video = _channel.videos[index - 1];
-                  return _buildVideo(video);
+                  Channels channel = _channels[index];
+                  return _buildProfileInfo(channel);
                 },
               ),
             )
