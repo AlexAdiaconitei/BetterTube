@@ -62,7 +62,7 @@ class ProfilePage extends StatelessWidget {
                 onPressed: () async {
                   bool res = await AuthProvider.of(context).auth.signOut();
                   if(res)
-                    Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
+                    Navigator.of(context).pushReplacementNamed('/');
                 },
                 color: Colors.deepPurple,
                 child: Padding(

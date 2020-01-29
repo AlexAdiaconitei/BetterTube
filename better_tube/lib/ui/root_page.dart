@@ -18,6 +18,19 @@ enum AuthStatus {
 }
 
 class _RootPageState extends State<RootPage> {
+
+  int _currentIndex = 0;
+  final List<Widget> _children = [
+    SubscriptionsPage(),
+    ProfilePage(),
+  ];
+
+  void onTabTapped(int index){
+    setState(() {
+     _currentIndex = index; 
+    });
+  }
+
   AuthStatus authStatus = AuthStatus.notDetermined;
 
   @override
@@ -39,7 +52,26 @@ class _RootPageState extends State<RootPage> {
       case AuthStatus.notSignedIn:
         return LoginPage();
       case AuthStatus.signedIn:
-        return SubscriptionsPage();
+        // return SubscriptionsPage();
+        return Scaffold(
+          body: _children[_currentIndex],
+          bottomNavigationBar: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            currentIndex: _currentIndex,
+            onTap: onTabTapped,
+            fixedColor: Colors.red,
+            iconSize: 24.0,
+            items: [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.favorite),
+                title: Text('Subscriptions'),
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.person),
+                title: Text('Profile'),
+              ),
+            ])
+        );
     }
     return null;
   }

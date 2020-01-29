@@ -1,4 +1,5 @@
 import 'package:better_tube/ui/profile_page.dart';
+import 'package:better_tube/ui/root_page.dart';
 import 'package:better_tube/utils/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
 
@@ -33,13 +34,7 @@ class _LoginPageState extends State<LoginPage> {
       splashColor: Colors.grey,
       onPressed: () {
         AuthProvider.of(context).auth.signInWithGoogle().whenComplete(() {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) {
-                return ProfilePage();
-              },
-            ),
-          );
+          Navigator.of(context).pushReplacementNamed('/');
         });
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),

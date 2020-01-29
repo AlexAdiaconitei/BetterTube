@@ -11,11 +11,14 @@ class MyApp extends StatelessWidget {
     return AuthProvider(
       auth: Auth(),
       child: MaterialApp(
-        title: 'Flutter login demo',
+        title: 'BetterTube',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.red,
         ),
-        home: RootPage(),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => RootPage(),
+        },
       ),
     );
   }

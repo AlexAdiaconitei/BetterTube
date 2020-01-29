@@ -133,6 +133,9 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
     setState(() {
       _channel.videos = allVideos;
     });
+    List<Channel> channels = await APIService.instance
+        .fetchSubscriptions();
+    print(channels);
     _isLoading = false;
   }
 
@@ -140,7 +143,7 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('YouTube Channel'),
+        title: Text('Subscriptions'),
       ),
       body: _channel != null
           ? NotificationListener<ScrollNotification>(
