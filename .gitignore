@@ -38,3 +38,4 @@ lib/generated_plugin_registrant.dart
 
 # Ignore
 better_tube/android/app/google-services.json
+better_tube/lib/utils/keys/keys.dart

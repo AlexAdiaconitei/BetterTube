@@ -1,4 +1,4 @@
-import 'package:better_tube/utils/auth_provider.dart';
+import 'package:better_tube/utils/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
 
 import 'login_page.dart';

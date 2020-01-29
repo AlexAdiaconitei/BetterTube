@@ -1,7 +1,8 @@
 import 'package:better_tube/ui/login_page.dart';
 import 'package:better_tube/ui/profile_page.dart';
-import 'package:better_tube/utils/auth.dart';
-import 'package:better_tube/utils/auth_provider.dart';
+import 'package:better_tube/ui/subscriptions_page.dart';
+import 'package:better_tube/utils/auth/auth.dart';
+import 'package:better_tube/utils/auth/auth_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +39,7 @@ class _RootPageState extends State<RootPage> {
       case AuthStatus.notSignedIn:
         return LoginPage();
       case AuthStatus.signedIn:
-        return ProfilePage();
+        return SubscriptionsPage();
     }
     return null;
   }

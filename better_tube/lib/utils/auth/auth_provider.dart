@@ -1,4 +1,4 @@
-import 'package:better_tube/utils/auth.dart';
+import 'package:better_tube/utils/auth/auth.dart';
 import 'package:flutter/material.dart';
 
 class AuthProvider extends InheritedWidget {

@@ -10,6 +10,7 @@ MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube
 MERGED from [:firebase_core_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:google_sign_in] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:google_sign_in_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:webview_flutter] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\55d34680cb355b31e94d0f084da4ed07\jetified-firebase-auth-interop-17.0.0\AndroidManifest.xml:2:1-10:12
@@ -22,6 +23,7 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Caiman\
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9cffedbea0679a7a7bcba13941097f4f\jetified-play-services-basement-16.1.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8edd8941eeafa33a8e77707a9f28ffd6\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\72065e9908db80ea0a9fc9ef31ea9634\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\88fa21618ba3cffa66077729729eaecd\webkit-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\18fdebe098a42e8f092301a3122be9d3\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8d6a67d6ccfe8551bf9bca32f4b99b1d\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\e4da438166fce9ed5f8cbbe1f58566fa\loader-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -138,6 +140,8 @@ MERGED from [:google_sign_in] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTub
 MERGED from [:google_sign_in] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:20:5-44
@@ -162,6 +166,8 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Caiman\.gradle\ca
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8edd8941eeafa33a8e77707a9f28ffd6\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\72065e9908db80ea0a9fc9ef31ea9634\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\72065e9908db80ea0a9fc9ef31ea9634\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\88fa21618ba3cffa66077729729eaecd\webkit-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\88fa21618ba3cffa66077729729eaecd\webkit-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\18fdebe098a42e8f092301a3122be9d3\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\18fdebe098a42e8f092301a3122be9d3\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8d6a67d6ccfe8551bf9bca32f4b99b1d\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
