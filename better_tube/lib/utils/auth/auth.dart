@@ -6,6 +6,7 @@ abstract class BaseAuth {
   Future<FirebaseUser> currentUser();
   Future<bool> signOut();
   FirebaseUser get user;
+  String get accessToken;
 }
 
 class Auth implements BaseAuth {
@@ -14,13 +15,22 @@ class Auth implements BaseAuth {
   final GoogleSignIn googleSignIn = GoogleSignIn();
 
   FirebaseUser _user;
+  String _accessToken;
 
   FirebaseUser get user => _user;
+  String get accessToken => _accessToken;
 
   @override
   Future<bool> signInWithGoogle() async {
     try {
-      GoogleSignIn googleSignIn = GoogleSignIn();
+      GoogleSignIn googleSignIn = GoogleSignIn(
+        scopes: [
+        'email',
+        'profile',
+        'openid',
+        'https://www.googleapis.com/auth/youtube.readonly',
+        ],
+      );
       GoogleSignInAccount account = await googleSignIn.signIn();
 
       if(account == null )
@@ -28,13 +38,15 @@ class Auth implements BaseAuth {
 
       AuthResult res = await _firebaseAuth.signInWithCredential(GoogleAuthProvider.getCredential(
         idToken: (await account.authentication).idToken,
-        accessToken: (await account.authentication).accessToken,
+        accessToken: (await account.authentication).accessToken, 
       ));
 
       if(res.user == null)
         return false;
 
       _user = res.user;
+      _accessToken = (await account.authentication).accessToken;
+      print(_accessToken);
 
       print("User logged in with Google.");
       return true;

@@ -1,5 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:better_tube/models/channels_model.dart';
+import 'package:better_tube/utils/auth/auth_provider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:better_tube/models/channel_model.dart';
 import 'package:better_tube/models/video_model.dart';
@@ -78,14 +81,13 @@ class APIService {
           Video.fromMap(json['snippet']),
         ),
       );
-      print(videos);
       return videos;
     } else {
       throw json.decode(response.body)['error']['message'];
     }
   }
 
-  Future<List<Channel>> fetchSubscriptions() async {
+  Future<List<Channels>> fetchSubscriptions(BuildContext context) async {
     print('fetchSubscriptions');
     Map<String, String> parameters = {
       'part': 'snippet',
@@ -101,6 +103,7 @@ class APIService {
     );
     Map<String, String> headers = {
       HttpHeaders.contentTypeHeader: 'application/json',
+      HttpHeaders.authorizationHeader: 'Bearer ' + AuthProvider.of(context).auth.accessToken,
     };
 
     // Get Playlist Videos
@@ -112,13 +115,16 @@ class APIService {
       List<dynamic> channelsJson = data['items'];
 
       // Fetch first eight videos from uploads playlist
-      List<Channel> channels = [];
+      List<Channels> channels = [];
       channelsJson.forEach(
         (json) => channels.add(
-          Channel.fromMap(json['snippet']),
+          Channels.fromMap(json['snippet']),
         ),
       );
-      print(channels);
+      for(Channels channel in channels) {
+        print(channel.id);
+        print(channel.title);
+      }
       return channels;
     } else {
       throw json.decode(response.body)['error']['message'];

@@ -1,3 +1,4 @@
+import 'package:better_tube/models/channels_model.dart';
 import 'package:flutter/material.dart';
 import 'package:better_tube/models/channel_model.dart';
 import 'package:better_tube/models/video_model.dart';
@@ -125,7 +126,7 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
     );
   }
 
-  _loadMoreVideos() async {
+  _loadMoreVideos(BuildContext context) async {
     _isLoading = true;
     List<Video> moreVideos = await APIService.instance
         .fetchVideosFromPlaylist(playlistId: _channel.uploadPlaylistId);
@@ -133,9 +134,8 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
     setState(() {
       _channel.videos = allVideos;
     });
-    List<Channel> channels = await APIService.instance
-        .fetchSubscriptions();
-    print(channels);
+    List<Channels> channels = await APIService.instance
+        .fetchSubscriptions(context);
     _isLoading = false;
   }
 
@@ -152,7 +152,7 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
                     _channel.videos.length != int.parse(_channel.videoCount) &&
                     scrollDetails.metrics.pixels ==
                         scrollDetails.metrics.maxScrollExtent) {
-                  _loadMoreVideos();
+                  _loadMoreVideos(context);
                 }
                 return false;
               },
