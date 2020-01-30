@@ -52,7 +52,6 @@ class _RootPageState extends State<RootPage> {
       case AuthStatus.notSignedIn:
         return LoginPage();
       case AuthStatus.signedIn:
-        // return SubscriptionsPage();
         return Scaffold(
           body: _children[_currentIndex],
           bottomNavigationBar: BottomNavigationBar(

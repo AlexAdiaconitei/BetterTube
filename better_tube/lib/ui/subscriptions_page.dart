@@ -12,7 +12,6 @@ class SubscriptionsPage extends StatefulWidget {
 
 class _SubscriptionsPageState extends State<SubscriptionsPage> {
   List<Channels> _channels;
-  bool _isLoading = false;
 
   @override
   void initState() {

@@ -12,7 +12,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return _isLoading ? Loading('Signin In') : Scaffold(
+    return _isLoading ? Loading('Signing In') : 
+    Scaffold(
       body: Container(
         color: Colors.white,
         child: Center(
