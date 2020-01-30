@@ -1,3 +1,4 @@
+import 'package:better_tube/fragments/category_fragment.dart';
 import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/models/category_model.dart';
 import 'package:better_tube/services/auth/auth_provider.dart';
@@ -39,8 +40,8 @@ class _CategoriesPageState extends State<CategoriesPage> {
               child: ListView.builder(
                 itemCount: _categories.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return ListTile(
-                    title: Text('${_categories[index].name}'),
+                  return CategoryFragment(
+                    _categories[index],
                   );
                 },
               ),
