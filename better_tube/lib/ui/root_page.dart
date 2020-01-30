@@ -1,3 +1,4 @@
+import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/ui/categories_page.dart';
 import 'package:better_tube/ui/login_page.dart';
 import 'package:better_tube/ui/profile_page.dart';
@@ -50,7 +51,7 @@ class _RootPageState extends State<RootPage> {
   Widget build(BuildContext context) {
     switch (authStatus) {
       case AuthStatus.notDetermined:
-        return _buildWaitingScreen();
+        return Loading('Loading');
       case AuthStatus.notSignedIn:
         return LoginPage();
       case AuthStatus.signedIn:
@@ -80,13 +81,5 @@ class _RootPageState extends State<RootPage> {
     }
     return null;
   }
-
-  Widget _buildWaitingScreen() {
-    return Scaffold(
-      body: Container(
-        alignment: Alignment.center,
-        child: CircularProgressIndicator(),
-      ),
-    );
-  }
+  
 }
