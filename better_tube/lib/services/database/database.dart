@@ -16,7 +16,7 @@ class DatabaseService {
   }
 
   Future<void> updateUserAccessToken(String accessToken) async {
-    return await userDatacollection.document(uid).setData({
+    return await userDatacollection.document(uid).updateData({
       'accessToken': accessToken,
     });
   }

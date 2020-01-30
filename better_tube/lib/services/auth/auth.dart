@@ -67,7 +67,7 @@ class Auth implements BaseAuth {
           {},
           channelsID
         );
-        
+
         // Sample data
         //
         // await DatabaseService(uid: user.uid).updateUserData(
