@@ -1,3 +1,4 @@
+import 'package:better_tube/ui/categories_page.dart';
 import 'package:better_tube/ui/login_page.dart';
 import 'package:better_tube/ui/profile_page.dart';
 import 'package:better_tube/ui/subscriptions_page.dart';
@@ -19,8 +20,9 @@ enum AuthStatus {
 
 class _RootPageState extends State<RootPage> {
 
-  int _currentIndex = 1;
+  int _currentIndex = 2;
   final List<Widget> _children = [
+    CategoriesPage(),
     SubscriptionsPage(),
     ProfilePage(),
   ];
@@ -61,6 +63,10 @@ class _RootPageState extends State<RootPage> {
             fixedColor: Colors.red,
             iconSize: 24.0,
             items: [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.category),
+                title: Text('Categories'),
+              ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),
                 title: Text('Subscriptions'),

@@ -1,8 +1,6 @@
 import 'package:better_tube/services/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
 
-import 'login_page.dart';
-
 class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
