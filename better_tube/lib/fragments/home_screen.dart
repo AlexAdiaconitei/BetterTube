@@ -1,7 +1,7 @@
+import 'package:better_tube/fragments/video_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:better_tube/models/channel_model.dart';
 import 'package:better_tube/models/video_model.dart';
-import 'package:better_tube/screens/video_screen.dart';
 import 'package:better_tube/services/api_service.dart';
 
 class HomeScreen extends StatefulWidget {
