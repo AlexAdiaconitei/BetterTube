@@ -35,7 +35,7 @@ class CategoryFragment extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 25.0,
-                    fontFamily: 'Quicksand',
+                    fontFamily: 'Roboto',
                   ),
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -52,7 +52,7 @@ class CategoryFragment extends StatelessWidget {
                   category.numberOfVideos.toString(),
                   style: TextStyle(
                           color: Colors.white,
-                          fontFamily: 'Quicksand',
+                          fontFamily: 'Roboto',
                           fontSize: 25.0,
                         ),
                   ),

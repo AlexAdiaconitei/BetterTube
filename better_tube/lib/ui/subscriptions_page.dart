@@ -30,9 +30,6 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Subscriptions'),
-      ),
       body: _channels != null ?
           Center (
               child: ListView.builder(

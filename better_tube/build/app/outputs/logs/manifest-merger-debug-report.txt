@@ -5,23 +5,25 @@ INJECTED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\an
 INJECTED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml:1:1-30:12
 INJECTED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml:1:1-30:12
 MERGED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml:1:1-30:12
-MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:google_sign_in] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:google_sign_in_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:webview_flutter] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9c3367fa49e4706b901e42f7a2a5c2f8\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:17:1-42:12
-MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:2:1-26:12
-MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1a7d7997d07424753c3a23ea76b0c653\play-services-flags-16.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1556ccd448fd56ae5e24f59b576a8180\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\298b6ed94714f9e134c197cca859df48\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1a7d7997d07424753c3a23ea76b0c653\play-services-flags-16.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\29f98d1e8219df0e26bf346b4c3609cd\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\38280034d4adae17f31f52df5607a207\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\72065e9908db80ea0a9fc9ef31ea9634\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -71,24 +73,24 @@ INJECTED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\an
 		ADDED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml:1:11-69
 application
 ADDED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml:8:5-29:19
-MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
-MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
-MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
-MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\29f98d1e8219df0e26bf346b4c3609cd\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\29f98d1e8219df0e26bf346b4c3609cd\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\38280034d4adae17f31f52df5607a207\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
@@ -139,40 +141,44 @@ uses-sdk
 INJECTED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\main\AndroidManifest.xml
-MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\google_sign_in_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core_web] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\webview_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9c3367fa49e4706b901e42f7a2a5c2f8\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9c3367fa49e4706b901e42f7a2a5c2f8\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1a7d7997d07424753c3a23ea76b0c653\play-services-flags-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1a7d7997d07424753c3a23ea76b0c653\play-services-flags-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1556ccd448fd56ae5e24f59b576a8180\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1556ccd448fd56ae5e24f59b576a8180\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\298b6ed94714f9e134c197cca859df48\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\298b6ed94714f9e134c197cca859df48\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\9056b3c9191bfd3772bae5f3061d7f12\firebase-auth-interop-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1a7d7997d07424753c3a23ea76b0c653\play-services-flags-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1a7d7997d07424753c3a23ea76b0c653\play-services-flags-16.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\29f98d1e8219df0e26bf346b4c3609cd\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\29f98d1e8219df0e26bf346b4c3609cd\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\38280034d4adae17f31f52df5607a207\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
@@ -250,43 +256,73 @@ MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gra
 	android:name
 		ADDED from D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\android\app\src\debug\AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+ADDED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:33:9-39:19
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:35:13-37
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:19:13-37
 	tools:targetApi
 		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:36:13-32
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 	android:name
-		ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
-meta-data#com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-	android:value
-		ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-	android:name
-		ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+		ADDED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
 ADDED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
 		ADDED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:cloud_firestore] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+meta-data#com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_auth] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
 ADDED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
 		ADDED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] D:\PROGRAMACION\Flutter-Workspace\Github-BetterTube\better_tube\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\f3637c3b16701e9cca12efe6e01585ff\grpc-android-1.21.0\AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\f3637c3b16701e9cca12efe6e01585ff\grpc-android-1.21.0\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:22-76
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
@@ -309,18 +345,14 @@ ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\ca
 		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:38:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\d6af9bcc4786519269a8d60adb3e730b\jetified-firebase-auth-17.0.0\AndroidManifest.xml:37:17-109
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:5-79
-MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\f3637c3b16701e9cca12efe6e01585ff\grpc-android-1.21.0\AndroidManifest.xml:11:5-79
-MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\f3637c3b16701e9cca12efe6e01585ff\grpc-android-1.21.0\AndroidManifest.xml:11:5-79
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:22-76
-meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
-ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
-	android:value
-		ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\8880598c1c86359fbd0bc8284112f70c\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
 	android:authorities
@@ -331,32 +363,6 @@ ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\
 		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\fd934158dfb94f223195834f504535b9\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\1d816ddd5da3bed1bfef0572022d222c\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\19a2c2686658712b5d7a9ec57a71fb7a\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Caiman\.gradle\caches\transforms-2\files-2.1\38280034d4adae17f31f52df5607a207\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value

@@ -1,4 +1,5 @@
 import 'package:better_tube/fragments/category_fragment.dart';
+import 'package:better_tube/fragments/create_category_dialog.dart';
 import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/models/category_model.dart';
 import 'package:better_tube/services/auth/auth_provider.dart';
@@ -32,9 +33,6 @@ class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Categories'),
-      ),
       body: _categories != null ?
           Center (
               child: ListView.builder(
@@ -49,11 +47,22 @@ class _CategoriesPageState extends State<CategoriesPage> {
           : Loading('Fetching Your Categories'),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print('xd');
+          _showAlertDialog();
         },
         child: Icon(Icons.add),
         backgroundColor: Colors.red,
       ),
     );
   }
+
+  _showAlertDialog() {
+    showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext context) {
+        return CreateCategoryDialog();
+      }
+    );
+  }
+
 }

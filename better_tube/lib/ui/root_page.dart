@@ -1,3 +1,4 @@
+import 'package:better_tube/fragments/custom_appbar.dart';
 import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/ui/categories_page.dart';
 import 'package:better_tube/ui/login_page.dart';
@@ -56,6 +57,7 @@ class _RootPageState extends State<RootPage> {
         return LoginPage();
       case AuthStatus.signedIn:
         return Scaffold(
+          appBar: CustomAppBar(),
           body: _children[_currentIndex],
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
