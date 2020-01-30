@@ -19,7 +19,7 @@ enum AuthStatus {
 
 class _RootPageState extends State<RootPage> {
 
-  int _currentIndex = 0;
+  int _currentIndex = 1;
   final List<Widget> _children = [
     SubscriptionsPage(),
     ProfilePage(),

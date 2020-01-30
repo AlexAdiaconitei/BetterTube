@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:better_tube/models/channels_model.dart';
-import 'package:better_tube/utils/auth/auth_provider.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:better_tube/models/channel_model.dart';
 import 'package:better_tube/models/video_model.dart';
@@ -91,6 +89,7 @@ class APIService {
     Creates a list with all suscribed channels. 
   */
   Future<List<Channels>> fetchSubscriptions(String accessToken) async {
+    _nextPageTokenSubs = '';
     _allChannelsJson = new List<dynamic>();
     while(_nextPageTokenSubs != 'end') {
       await _fetchSubscriptionsAux(accessToken);

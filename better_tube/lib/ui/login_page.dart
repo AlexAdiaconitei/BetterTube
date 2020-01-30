@@ -1,5 +1,4 @@
-import 'package:better_tube/ui/profile_page.dart';
-import 'package:better_tube/ui/root_page.dart';
+import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/utils/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
 
@@ -9,9 +8,11 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool _isLoading = false;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return _isLoading ? Loading('Signin In') : Scaffold(
       body: Container(
         color: Colors.white,
         child: Center(
@@ -33,6 +34,7 @@ class _LoginPageState extends State<LoginPage> {
     return OutlineButton(
       splashColor: Colors.grey,
       onPressed: () {
+        setState(() => _isLoading = true);
         AuthProvider.of(context).auth.signInWithGoogle().whenComplete(() {
           Navigator.of(context).pushReplacementNamed('/');
         });

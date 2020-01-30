@@ -1,3 +1,4 @@
+import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/models/channels_model.dart';
 import 'package:better_tube/utils/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
@@ -73,36 +74,14 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
     );
   }
 
-  _loadMoreChannels() async {
-    _isLoading = true;
-    List<Channels> channels = await APIService.instance
-        .fetchSubscriptions(AuthProvider.of(context).auth.accessToken);
-    if(channels != null) {
-      List<Channels> allChannels = _channels..addAll(channels);
-      setState(() {
-        _channels = allChannels;
-      });
-    }
-    _isLoading = false;
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Subscriptions'),
       ),
-      body: _channels != null
-          ? NotificationListener<ScrollNotification>(
-              onNotification: (ScrollNotification scrollDetails) {
-                // if (!_isLoading &&
-                //     scrollDetails.metrics.pixels ==
-                //         scrollDetails.metrics.maxScrollExtent) {
-                //   _loadMoreChannels();
-                // }
-                _loadMoreChannels();
-                return false;
-              },
+      body: _channels != null ?
+          Center (
               child: ListView.builder(
                 itemCount: _channels.length,
                 itemBuilder: (BuildContext context, int index) {
@@ -111,13 +90,7 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
                 },
               ),
             )
-          : Center(
-              child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(
-                  Theme.of(context).primaryColor, // Red
-                ),
-              ),
-            ),
+          : Loading('Fetching Your Subscriptions'),
     );
   }
 }
