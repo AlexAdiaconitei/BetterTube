@@ -136,6 +136,20 @@ class APIService {
     }
   }
 
+  /*  
+    Returns a list of channel 
+  */
+  Future<List<String>> fetchSubscriptionsChannelsID(String accessToken) async {
+    List<String> channelsID = new List<String>();
+
+    List<Channels> channels = await fetchSubscriptions(accessToken);
+    for (Channels channel in channels) {
+      channelsID.add(channel.id);
+    }
+
+    return channelsID;
+  }
+
   Map<String, String> _createParameters() {
     Map<String, String> parameters = {
       'part': 'snippet',

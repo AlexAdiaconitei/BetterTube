@@ -1,4 +1,10 @@
-#Thu Jan 30 13:00:12 CET 2020
-base.0=D\:\\PROGRAMACION\\Flutter-Workspace\\Github-BetterTube\\better_tube\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Thu Jan 30 15:37:08 CET 2020
+path.2=classes3.dex
+path.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=D\:\\PROGRAMACION\\Flutter-Workspace\\Github-BetterTube\\better_tube\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
+base.1=D\:\\PROGRAMACION\\Flutter-Workspace\\Github-BetterTube\\better_tube\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
+base.0=D\:\\PROGRAMACION\\Flutter-Workspace\\Github-BetterTube\\better_tube\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex

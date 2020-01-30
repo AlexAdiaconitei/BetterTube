@@ -1,5 +1,5 @@
 import 'package:better_tube/fragments/loading.dart';
-import 'package:better_tube/utils/auth/auth_provider.dart';
+import 'package:better_tube/services/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {

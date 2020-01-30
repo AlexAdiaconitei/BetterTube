@@ -4,23 +4,6 @@
             "outputFile": "D:\\PROGRAMACION\\Flutter-Workspace\\Github-BetterTube\\better_tube\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Caiman\\.gradle\\caches\\transforms-2\\files-2.1\\9cffedbea0679a7a7bcba13941097f4f\\jetified-play-services-basement-16.1.0\\res\\values-zh-rCN\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "157",
-                        "endOffsets": "408"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1125",
-                        "endColumns": "157",
-                        "endOffsets": "1278"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Caiman\\.gradle\\caches\\transforms-2\\files-2.1\\61e1cd487ff28180e1e5f8159572bf0a\\core-1.0.0\\res\\values-zh-rCN\\values-zh-rCN.xml",
                     "from": {
                         "startLines": "2",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Caiman\\.gradle\\caches\\transforms-2\\files-2.1\\af0d3aa1b2657506bfdf5dc04450a92b\\jetified-play-services-base-16.0.1\\res\\values-zh-rCN\\values.xml",
+                    "source": "C:\\Users\\Caiman\\.gradle\\caches\\transforms-2\\files-2.1\\38280034d4adae17f31f52df5607a207\\jetified-play-services-basement-17.0.0\\res\\values-zh-rCN\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "157",
+                        "endOffsets": "408"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1125",
+                        "endColumns": "157",
+                        "endOffsets": "1278"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Caiman\\.gradle\\caches\\transforms-2\\files-2.1\\19a2c2686658712b5d7a9ec57a71fb7a\\play-services-base-17.0.0\\res\\values-zh-rCN\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

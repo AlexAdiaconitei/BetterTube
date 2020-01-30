@@ -1,7 +1,7 @@
 import 'package:better_tube/fragments/channel_fragment.dart';
 import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/models/channels_model.dart';
-import 'package:better_tube/utils/auth/auth_provider.dart';
+import 'package:better_tube/services/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:better_tube/services/api_service.dart';
 
@@ -22,11 +22,11 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
   }
 
   _initChannel() async {
-    List<Channels> channels = await APIService.instance
-        .fetchSubscriptions(AuthProvider.of(context).auth.accessToken);
-    setState(() {
-      _channels = channels;
-    });
+    // List<Channels> channels = await APIService.instance
+    //     .fetchSubscriptions(AuthProvider.of(context).auth.accessToken);
+    // setState(() {
+    //   _channels = channels;
+    // });
   }
 
   @override
