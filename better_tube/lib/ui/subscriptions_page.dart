@@ -2,7 +2,6 @@ import 'package:better_tube/fragments/channel_fragment.dart';
 import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/models/channels_model.dart';
 import 'package:flutter/material.dart';
-import 'package:better_tube/services/youtube-api/api_service.dart';
 
 class SubscriptionsPage extends StatefulWidget {
   @override

@@ -1,3 +1,4 @@
+import 'package:better_tube/models/category_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DatabaseService {
@@ -21,19 +22,22 @@ class DatabaseService {
     });
   }
 
-  // List<String> _categoriesListFromSnapshot(DocumentSnapshot snapshot) {
-  //   return snapshot.data.keys.map((doc) {
-
+  // Future<List<String>> get categoriesTitle async {
+  //   Map<String, List<dynamic>> categories = await userDataCollection.document(uid).get().then((result) {
+  //     return Map<String, List<dynamic>>.from(result.data['categories']);
   //   });
+  //   return List<String>.from(categories.keys);
   // }
 
-  Future<List<String>> get categoriesTitle async {
-    Map<String, List<dynamic>> categories = await userDataCollection.document(uid).get().then((result) {
+  Future<List<Category>> get categories async {
+    Map<String, List<dynamic>> categoriesRaw = await userDataCollection.document(uid).get().then((result) {
       return Map<String, List<dynamic>>.from(result.data['categories']);
     });
-    return List<String>.from(categories.keys);
-    // return userDataCollection.document(uid).snapshots()
-    //   .map(_categoriesListFromSnapshot);
+    List<Category> categories = List<Category>();
+    categoriesRaw.forEach((k, v) {
+      categories.add(Category(name:k, channels: List<String>.from(v)));
+    });
+    return categories;
   }
 
 }

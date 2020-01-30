@@ -1,8 +1,8 @@
 import 'package:better_tube/fragments/loading.dart';
+import 'package:better_tube/models/category_model.dart';
 import 'package:better_tube/services/auth/auth_provider.dart';
 import 'package:better_tube/services/database/database.dart';
 import 'package:flutter/material.dart';
-import 'package:better_tube/services/youtube-api/api_service.dart';
 
 class CategoriesPage extends StatefulWidget {
   @override
@@ -10,7 +10,7 @@ class CategoriesPage extends StatefulWidget {
 }
 
 class _CategoriesPageState extends State<CategoriesPage> {
-  List<String> _categories;
+  List<Category> _categories;
 
   @override
   void didChangeDependencies() {
@@ -19,7 +19,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
   }
 
   _initCategories() async {
-    await DatabaseService(uid: AuthProvider.of(context).auth.user.uid).categoriesTitle
+    await DatabaseService(uid: AuthProvider.of(context).auth.user.uid).categories
           .then((categories) {
             setState(() {
               _categories = categories;
@@ -40,12 +40,19 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 itemCount: _categories.length,
                 itemBuilder: (BuildContext context, int index) {
                   return ListTile(
-                    title: Text('${_categories[index]}'),
+                    title: Text('${_categories[index].name}'),
                   );
                 },
               ),
             )
           : Loading('Fetching Your Categories'),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print('xd');
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.red,
+      ),
     );
   }
 }
