@@ -9,10 +9,14 @@ class DatabaseService {
   final CollectionReference userDataCollection = Firestore.instance.collection('userData');
 
   Future<void> updateUserData(String accessToken, Map<String, List<String>> categories, List<String> subscriptions) async {
+    // return await userDataCollection.document(uid).setData({
+    //   'accessToken': accessToken,
+    //   'categories': categories,
+    //   'subscriptions': subscriptions,
+    // });
     return await userDataCollection.document(uid).setData({
       'accessToken': accessToken,
-      'categories': categories,
-      'subscriptions': subscriptions,
+      // 'subscriptions': subscriptions,
     });
   }
 
@@ -38,6 +42,29 @@ class DatabaseService {
       categories.add(Category(name:k, channels: List<String>.from(v)));
     });
     return categories;
+  }
+
+  /* Create a category */
+  // TODO If called on an existing category, overrides it
+  Future<bool> createCategory(String categoryName) async {
+    return await userDataCollection.document(uid).collection('categories').document(categoryName).get().then((snapshot) async {
+      if(snapshot.exists) {
+        return false;
+      } else {
+        await userDataCollection.document(uid).collection('categories').document(categoryName).setData({
+          'channels': '',
+          'color': '#FFFFFF',
+        });
+        return true;
+      }
+    });
+  }
+
+  /* Add channel to category */
+  Future<void> updateCategory(String categoryName) async {
+    return await userDataCollection.document(uid).collection('categories').document(categoryName).updateData({
+      'channels': FieldValue.arrayUnion(['1', '3']),
+    });
   }
 
 }

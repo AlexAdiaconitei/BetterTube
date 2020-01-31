@@ -55,12 +55,12 @@ class Auth implements BaseAuth {
       /* Check if the user is new. */
       if(res.additionalUserInfo.isNewUser) {
         List<String> channelsID;
-        try{
-          channelsID = await APIService.instance
-          .fetchSubscriptionsChannelsID(_accessToken);
-        } catch (e) {
-          channelsID = new List<String>();
-        }
+        // try{
+        //   channelsID = await APIService.instance
+        //   .fetchSubscriptionsChannelsID(_accessToken);
+        // } catch (e) {
+        //   channelsID = new List<String>();
+        // }
 
         await DatabaseService(uid: user.uid).updateUserData(
           _accessToken, 
@@ -76,6 +76,12 @@ class Auth implements BaseAuth {
         //   ['UC88tlMjiS7kf8uhPWyBTn_A', 'UCyM-2pRapEv6V2q7UNO9icg']
         // );
       } else {
+        // await DatabaseService(uid: user.uid).updateUserData(
+        //   _accessToken, 
+        //   {'Aviation': ['UC88tlMjiS7kf8uhPWyBTn_A', 'UCyM-2pRapEv6V2q7UNO9icg'],
+        //    'Education':['UCyM-2pRapEv6V2q7UNO9icg']},
+        //   ['UC88tlMjiS7kf8uhPWyBTn_A', 'UCyM-2pRapEv6V2q7UNO9icg']
+        // );
         await DatabaseService(uid: user.uid).updateUserAccessToken(_accessToken);
       }
 

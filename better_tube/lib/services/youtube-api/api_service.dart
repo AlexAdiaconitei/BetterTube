@@ -89,6 +89,7 @@ class APIService {
     Creates a list with all suscribed channels. 
   */
   Future<List<Channels>> fetchSubscriptions(String accessToken) async {
+    print('fetchSubscriptions');
     _nextPageTokenSubs = '';
     _allChannelsJson = new List<dynamic>();
     while(_nextPageTokenSubs != 'end') {

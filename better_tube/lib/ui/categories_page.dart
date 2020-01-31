@@ -1,5 +1,5 @@
 import 'package:better_tube/fragments/category_fragment.dart';
-import 'package:better_tube/fragments/create_category_dialog.dart';
+import 'package:better_tube/dialogs/create_category_dialog.dart';
 import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/models/category_model.dart';
 import 'package:better_tube/services/auth/auth_provider.dart';

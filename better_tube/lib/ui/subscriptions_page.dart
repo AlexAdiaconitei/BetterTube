@@ -1,6 +1,8 @@
 import 'package:better_tube/fragments/channel_fragment.dart';
 import 'package:better_tube/fragments/loading.dart';
 import 'package:better_tube/models/channels_model.dart';
+import 'package:better_tube/services/auth/auth_provider.dart';
+import 'package:better_tube/services/youtube-api/api_service.dart';
 import 'package:flutter/material.dart';
 
 class SubscriptionsPage extends StatefulWidget {
@@ -31,15 +33,12 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _channels != null ?
-          Center (
-              child: ListView.builder(
-                itemCount: _channels.length,
-                itemBuilder: (BuildContext context, int index) {
-                  Channels channel = _channels[index];
-                  return ChannelFragment(channel);
-                },
-              ),
-            )
+          ListView.builder(
+            itemCount: _channels.length,
+            itemBuilder: (BuildContext context, int index) {
+              return ChannelFragment(_channels[index]);
+            },
+          )
           : Loading('Fetching Your Subscriptions'),
     );
   }
