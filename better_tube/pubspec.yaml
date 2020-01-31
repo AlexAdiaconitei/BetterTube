@@ -29,6 +29,7 @@ dependencies:
   http: ^0.12.0+4
   youtube_player_flutter: ^6.0.3+2
   flutter_spinkit: "^4.1.1"
+  flutter_circle_color_picker: ^0.1.1
 
 dev_dependencies:
   flutter_test:

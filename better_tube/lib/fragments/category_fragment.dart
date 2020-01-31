@@ -46,16 +46,20 @@ class CategoryFragment extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
-                backgroundColor: Colors.red,
+                backgroundColor: category.color,
                 radius: 25.0,
-                child: Text(
-                  category.numberOfVideos.toString(),
-                  style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Roboto',
-                          fontSize: 25.0,
-                        ),
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  radius: 18.0,
+                  child: Text(
+                    category.numberOfVideos.toString(),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontFamily: 'Roboto',
+                      fontSize: 15.0,
+                    ),
                   ),
+                ),
               ),
               Text(
                   'Channels',
