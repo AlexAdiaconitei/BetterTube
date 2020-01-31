@@ -26,33 +26,33 @@ class DatabaseService {
     });
   }
 
-  // Future<List<String>> get categoriesTitle async {
-  //   Map<String, List<dynamic>> categories = await userDataCollection.document(uid).get().then((result) {
-  //     return Map<String, List<dynamic>>.from(result.data['categories']);
-  //   });
-  //   return List<String>.from(categories.keys);
-  // }
-
   Future<List<Category>> get categories async {
-    Map<String, List<dynamic>> categoriesRaw = await userDataCollection.document(uid).get().then((result) {
-      return Map<String, List<dynamic>>.from(result.data['categories']);
-    });
+    // Map<String, List<dynamic>> categoriesRaw = await userDataCollection.document(uid).get().then((result) {
+    //   return Map<String, List<dynamic>>.from(result.data['categories']);
+    // });
+    // List<Category> categories = List<Category>();
+    // categoriesRaw.forEach((k, v) {
+    //   categories.add(Category(name:k, channels: List<String>.from(v)));
+    // });
+    // return categories;
     List<Category> categories = List<Category>();
-    categoriesRaw.forEach((k, v) {
-      categories.add(Category(name:k, channels: List<String>.from(v)));
+    await userDataCollection.document(uid).collection('categories').getDocuments().then((QuerySnapshot snapshot){
+      snapshot.documents.forEach((doc) {
+        List<String> channels = List<String> .from(doc['channels']);
+        categories.add(Category(name: doc.documentID, channels: channels, color: doc['color']));
+      });
     });
     return categories;
   }
 
   /* Create a category */
-  // TODO If called on an existing category, overrides it
   Future<bool> createCategory(String categoryName) async {
     return await userDataCollection.document(uid).collection('categories').document(categoryName).get().then((snapshot) async {
       if(snapshot.exists) {
         return false;
       } else {
         await userDataCollection.document(uid).collection('categories').document(categoryName).setData({
-          'channels': '',
+          'channels': [],
           'color': '#FFFFFF',
         });
         return true;

@@ -21,7 +21,7 @@ class _CreateCategoryDialogState extends State<CreateCategoryDialog> {
       // contentPadding: EdgeInsets.all(20.0),
       content: 
         Container(
-          height: 180.0,
+          height: 200.0,
           child: Stack(
             children: <Widget>[
               Column(
