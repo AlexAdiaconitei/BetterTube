@@ -58,11 +58,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
   _showAlertDialog() {
     showDialog(
       context: context,
-      barrierDismissible: true,
+      barrierDismissible: true,      
       builder: (BuildContext context) {
         return CreateCategoryDialog();
-      }
-    );
+      },      
+    ).then((_) {
+      _initCategories();
+    });
   }
 
 }

@@ -5,19 +5,18 @@ class Category {
   String name;
   List<String> channels;
   Color color;
-  int numberOfVideos;
+  int numberOfChannels;
 
   Category({this.name, this.channels, String colorString}) {
-    numberOfVideos = channels.length;
+    numberOfChannels = channels.length;
     color = _hexToColor(colorString);
   }
 
   Color _hexToColor(String code) {
     if(code == null) {
-      color = Color(0xFFFF0000);
-    } else {
-      return new Color(int.parse(code));
-    }
+      return Color(0xFFFF0000);
+    } 
+    return new Color(int.parse(code));
   }
 
 }

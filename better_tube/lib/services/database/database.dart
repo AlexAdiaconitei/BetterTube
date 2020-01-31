@@ -80,4 +80,9 @@ class DatabaseService {
     // });
   }
 
+  /* Delete a category */
+  Future<void> deleteCategory(String categoryName) async {
+    return await userDataCollection.document(uid).collection('categories').document('z').delete();
+  }
+
 }

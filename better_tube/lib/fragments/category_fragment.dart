@@ -52,10 +52,9 @@ class CategoryFragment extends StatelessWidget {
                   backgroundColor: Colors.white,
                   radius: 18.0,
                   child: Text(
-                    category.numberOfVideos.toString(),
+                    category.numberOfChannels.toString(),
                     style: TextStyle(
                       color: Colors.black,
-                      fontFamily: 'Roboto',
                       fontSize: 15.0,
                     ),
                   ),
