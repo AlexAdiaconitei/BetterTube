@@ -30,7 +30,7 @@ class _CategoryOptionsDialogState extends State<CategoryOptionsDialog> {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       content: 
         Container(
-          height: 150.0,
+          height: 215.0,
           child: Stack(
             children: <Widget>[
               Column(
@@ -75,10 +75,20 @@ class _CategoryOptionsDialogState extends State<CategoryOptionsDialog> {
                       SizedBox(height: 15.0,),
                       RaisedButton.icon(
                         onPressed: () async {
+                          _onUpdateCategoryColor();
+                        },
+                        icon: Icon(Icons.save, color: Colors.white,),
+                        label: Text('Save Color', style: TextStyle(color: Colors.white),),
+                        color: Colors.green,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+                      ),
+                      SizedBox(height: 15.0,),
+                      RaisedButton.icon(
+                        onPressed: () async {
                           _showAcceptCancelDialog();
                         },
                         icon: Icon(Icons.delete, color: Colors.white,),
-                        label: Text('Delete', style: TextStyle(color: Colors.white),),
+                        label: Text('Delete Category', style: TextStyle(color: Colors.white),),
                         color: Colors.red,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
                       ),     
@@ -144,7 +154,6 @@ class _CategoryOptionsDialogState extends State<CategoryOptionsDialog> {
       setState(() {
         color = newColorPicked;
       });
-      _onUpdateCategoryColor();
     });
   }
 
