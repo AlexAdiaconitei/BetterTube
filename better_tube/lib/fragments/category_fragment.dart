@@ -10,7 +10,7 @@ class CategoryFragment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(10.0),
-      padding: EdgeInsets.all(10.0),
+      // padding: EdgeInsets.all(10.0),
       height: 100.0,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -22,55 +22,61 @@ class CategoryFragment extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        children: <Widget>[
-          SizedBox(width: 12.0),
-          Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  category.name,
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 25.0,
-                    fontFamily: 'Roboto',
-                  ),
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
-            ),
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+      child: Material(
+            child: InkWell(
+            onTap: () {},
+            child: Row(
             children: <Widget>[
-              CircleAvatar(
-                backgroundColor: category.color,
-                radius: 25.0,
-                child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 18.0,
-                  child: Text(
-                    category.numberOfChannels.toString(),
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15.0,
+              SizedBox(width: 12.0),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      category.name,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 25.0,
+                        fontFamily: 'Roboto',
+                      ),
+                      overflow: TextOverflow.ellipsis,
                     ),
-                  ),
+                  ],
                 ),
               ),
-              Text(
-                  'Channels',
-                  style: TextStyle(
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  CircleAvatar(
+                    backgroundColor: category.color,
+                    radius: 25.0,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      radius: 18.0,
+                      child: Text(
+                        category.numberOfChannels.toString(),
+                        style: TextStyle(
                           color: Colors.black,
-                          fontFamily: 'Quicksand',
                           fontSize: 15.0,
                         ),
+                      ),
+                    ),
                   ),
+                  Text(
+                      'Channels',
+                      style: TextStyle(
+                              color: Colors.black,
+                              fontFamily: 'Quicksand',
+                              fontSize: 15.0,
+                            ),
+                      ),
+                ],
+              ),
+              SizedBox(width: 12.0),
             ],
           ),
-        ],
+        ),
       ),
     );
   }
