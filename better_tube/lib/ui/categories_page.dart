@@ -39,6 +39,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 itemCount: _categories.length,
                 itemBuilder: (BuildContext context, int index) {
                   return CategoryFragment(
+                    this,
                     _categories[index],
                   );
                 },

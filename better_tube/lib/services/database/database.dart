@@ -1,5 +1,6 @@
 import 'package:better_tube/models/category_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 
 class DatabaseService {
 
@@ -60,6 +61,18 @@ class DatabaseService {
     });
   }
 
+  /* Updates category color */
+  Future<bool> updateCategoryColor(String categoryName, String color) async {
+    try {
+      await userDataCollection.document(uid).collection('categories').document(categoryName).updateData({
+        'color': color,
+      });
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
   /* Add channel to category */
   Future<void> updateCategory(String categoryName, String channelID) async {
     return await userDataCollection.document(uid).collection('categories').document(categoryName).updateData({
@@ -81,8 +94,13 @@ class DatabaseService {
   }
 
   /* Delete a category */
-  Future<void> deleteCategory(String categoryName) async {
-    return await userDataCollection.document(uid).collection('categories').document('z').delete();
+  Future<bool> deleteCategory(String categoryName) async {
+    try{ 
+      await userDataCollection.document(uid).collection('categories').document(categoryName).delete();
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
 
 }
