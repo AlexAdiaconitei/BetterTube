@@ -142,7 +142,6 @@ class _CategoryOptionsDialogState extends State<CategoryOptionsDialog> {
     }
   }
 
-//TODO cambiar el _onUpdateCategoryColor a un boton xd
   void _launchColorPicker() {
     showDialog(
       context: context,

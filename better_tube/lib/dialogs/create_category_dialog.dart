@@ -1,3 +1,4 @@
+import 'package:better_tube/dialogs/color_picker_dialog.dart';
 import 'package:better_tube/dialogs/confirmation_dialog.dart';
 import 'package:better_tube/dialogs/error_dialog.dart';
 import 'package:better_tube/services/auth/auth_provider.dart';
@@ -167,42 +168,13 @@ class _CreateCategoryDialogState extends State<CreateCategoryDialog> {
       context: context,
       barrierDismissible: true,
       builder: (BuildContext context) {
-        return AlertDialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-          content: Container(
-            height: 290.0,
-            child: Column(
-              children: <Widget>[
-                CircleColorPicker(
-                  initialColor: color,
-                  onChanged: (colorPicked) {
-                    setState(() {
-                      color = colorPicked;
-                    });
-                  },
-                  size: const Size(240, 240),
-                  strokeWidth: 4,
-                  thumbSize: 36,
-                ),
-                RaisedButton(
-                  onPressed: () {
-                    setState(() {
-                      Navigator.pop(context);
-                    });
-                  },
-                  child: Text(
-                    "Pick",
-                    style: TextStyle(fontSize: 20.0, color: Colors.white),
-                  ),
-                  color: Colors.red,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-                ),
-              ],
-            ),
-          ),
-        );
+        return ColorPickerDialog(color);
       }
-    );
+    ).then((newColorPicked) {
+      setState(() {
+        color = newColorPicked;
+      });
+    });
   }
 
 }
