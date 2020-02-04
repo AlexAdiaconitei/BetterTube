@@ -1,5 +1,3 @@
-import 'package:better_tube/services/auth/auth_provider.dart';
-import 'package:better_tube/services/database/database.dart';
 import 'package:flutter/material.dart';
 
 class ErrorDialog extends StatelessWidget {

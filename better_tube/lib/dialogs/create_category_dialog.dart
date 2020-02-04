@@ -4,7 +4,6 @@ import 'package:better_tube/dialogs/error_dialog.dart';
 import 'package:better_tube/services/auth/auth_provider.dart';
 import 'package:better_tube/services/database/database.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_circle_color_picker/flutter_circle_color_picker.dart';
 
 class CreateCategoryDialog extends StatefulWidget {
   @override
